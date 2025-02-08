@@ -20,7 +20,7 @@
     /* overflow: hidden; */
 }
 #ff{
-    width: 240px;
+    /* width: 240px; */
     height: 240px;
     margin: 20px;
     border-radius: 20px;
@@ -49,6 +49,7 @@
             border-radius: 20px;
             display: inline-block;
             margin: 30px;
+            max-width: 360px;
             animation: pulse 2s infinite alternate;
         }
         .btn {
@@ -131,10 +132,12 @@
 
         setInterval(createHeart, 500); // Create a heart every 500ms
     </script>
-    <p style="color: #ff0055;"></p>
+    <p style="color: #ff0055;">
+        <a href = "#ff"><button class="btn">Confirm Your Presence</button></a>
+
+    </p>
     
     <div class="invite-box">
-        <a href = "#ff"><button class="btn">Confirm Your Presence</button></a>
         <p>Hey! <name>Srishti Sachdeva</name> ik this page may suck, but not my presence</p> 
         <p>And I can do nothing instead of asking a coffe afterall.✨</p>
         
