@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌸 Vrindavan Valentine Trip 🌸</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+           
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    /* overflow: hidden; */
+}
+#ff{
+    width: 240px;
+    height: 240px;
+    margin: 20px;
+    border-radius: 20px;
+    display: inline-block;
+}
+    @keyframes gradientBG {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+        h1 {
+            color: rgb(255, 0, 149);
+            font-family: 'Sacramento', cursive;
+            font-size: 3rem;
+            margin-bottom: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            animation: slideUp 1.5s ease-in-out;
+        }
+        .invite-box {
+            background: rgba(238, 146, 197, 0.941);
+            padding: 20px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 30px;
+            animation: pulse 2s infinite alternate;
+        }
+        .btn {
+            background: #ff0055;
+            padding: 12px 25px;
+            font-size: 1rem;
+            border: none;
+            color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #f7005a;
+            transform: scale(1.1);
+        }
+        iframe {
+            margin-top: 15px;
+            border-radius: 15px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .floating-heart {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: url('https://i.gifer.com/origin/82/82c6dbd0d31a2c3bde235cde5b89a01e_w200.webp') no-repeat center;
+            background-size: cover;
+            animation: floatUp 6s infinite ease-in-out;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(10px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.25); }
+        }
+        @keyframes floatUp {
+            0% { transform: translateY(0vh); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateY(-100vh); opacity: 0; }
+        }
+        name{
+            color: #ff0055;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div id="ff-compose"></div>
+    
+    <script>
+        document.addEventListener("click", function() {
+            let audio = document.getElementById("bg-music");
+            audio.play();
+        }, { once: true }); // Ensures it only runs once
+    </script>
+    
+    <h1>🌸 Let's Go to Vrindavan! 🌸</h1>
+    <script>
+        function createHeart() {
+            let heart = document.createElement("div");
+            heart.classList.add("floating-heart");
+            heart.innerHTML = "❤️";  // Use heart emoji
+            heart.style.left = Math.random() * 100 + "vw"; // Random position
+            heart.style.fontSize = Math.random() * 20 + 10 + "px"; // Random size
+            heart.style.animationDuration = Math.random() * 3 + 2 + "s"; // Random speed
+            document.body.appendChild(heart);
+            
+            setTimeout(() => {
+                heart.remove();
+            }, 5000);
+        }
+
+        setInterval(createHeart, 500); // Create a heart every 500ms
+    </script>
+    <p style="color: #ff0055;"></p>
+    
+    <div class="invite-box">
+        <a href = "#ff"><button class="btn">Confirm Your Presence</button></a>
+        <p>Hey! <name>Srishti Sachdeva</name> ik this page may suck, but not my presence</p> 
+        <p>And I can do nothing instead of asking a coffe afterall.✨</p>
+        
+    </div>
+    <div class="invite-box">
+        <p>Just thought and planned visit to Vrindavan this week! WBU Choose between <b>Tuesday, Wednesday, or Thursday</b>. 🗓️</p>
+        <p>⏰ let's plan in for <b>3:30 PM</b> SO that we don't miss the darshan <i>@4:00 PM</i> and could return by: <i>5:30 PM</i> (easy-peasy)</p>
+        <p><m>Bonus point to you if you could bring an <m>Activa</m> for the day —it'll be super duper awesome! I can assure🚀💖</m></p>
+    </div>
+    <!-- <iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSc6iYe0JNofN3-kxpp1GOIkCOtlRtDt2a9fOt3Jl4RuyLHu0Q/viewform?embedded=false" width="360" height="360" frameborder="0">Loading…</iframe> -->
+    <div id="ff">
+
+    </div>
+    <script async defer src="https://formfacade.com/include/105847227923810544231/form/1FAIpQLSc6iYe0JNofN3-kxpp1GOIkCOtlRtDt2a9fOt3Jl4RuyLHu0Q/classic.js?div=ff"></script>
+
+    <!-- Floating Hearts -->
+    
+</body>
+</html>
